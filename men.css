@@ -1,0 +1,82 @@
+
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    
+}
+
+.product img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.product-info {
+    text-align: left;
+}
+
+.product-name {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+    text-align: left;
+
+}
+
+.product-price {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.product-del-price {
+    text-decoration: line-through;
+    margin-bottom:5px;
+   
+}
+.product-price,
+.product-del-price {
+    display: inline; /* Display as inline elements */
+    margin: 2px; /* Remove any default margin */
+    padding: 2px; /* Remove any default padding */
+}
+
+.product-discount {
+    color: rgb(88, 4, 4);
+    margin-bottom: 10px;
+}
+
+.product-actions {
+    display: flex;
+    justify-content: center;
+}
+
+.buy-now-btn,
+.add-to-cart-btn {
+    padding: 5px 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    border: none;
+    background-color: #c5c5c5;
+    color: #000000;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.add-to-cart-btn {
+    background-color: #d36a6a;
+}
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    height: 100vh; /* Set container height to full viewport height */
+}
+
+.product-price,
+.product-del-price {
+    display: inline-block;
+    margin-right: 10px; /* Adjust as needed */
+}

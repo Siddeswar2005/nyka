@@ -1,0 +1,145 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+
+
+
+
+.inputSearch input{
+    background:transparent ;
+    border:none ;
+    outline:none ;
+    padding: 5px; 
+    min-width: 300px;
+    width:100% ;
+    max-width: 700px;
+}
+.accountlink{
+    display:flex ;
+    align-items:center ;
+    gap: 7px; ;
+    font: weight 500px; ;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content { 
+    background-color: #f9a03f;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #f7941d;
+    width: 50%;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: modal-fade-in 0.3s ease-in-out;
+}
+
+@keyframes modal-fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.close {
+    color: #fff;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #e8686a;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    }
+
+    button:hover {
+        background-color: #d94143;
+    }
+
+    form {
+        display: grid;
+        gap: 10px;
+    }
+
+    label {
+        color: #fff;
+    }
+
+    input {
+        padding: 8px;
+        border: 1px solid #f7941d;
+        border-radius: 5px;
+    }
+
+    input:focus {
+        outline: none;
+        border-color: #f7941d;
+        box-shadow: 0 0 5px rgba(247, 148, 29, 0.5);
+    }
+
+    input[type="checkbox"] {
+        display: inline-block;
+        margin-right: 5px;
+        transform: translateY(2px);
+    }
+
+    input[type="checkbox"]:focus {
+        outline: none;
+    }
+    .error {
+        color: rgb(105, 31, 31);
+        font-size: 12px;
+        display: block;
+        margin-top: 5px;
+    }
+
+    /* Add this CSS to your login.css file */
+    .modal {
+        display: block;
+    }
+
+    .modal-content {
+        display: block;
+    }
+
+
+
+
+
+
